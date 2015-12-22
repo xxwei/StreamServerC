@@ -1,0 +1,14 @@
+automake
+
+step 1 autoscan
+step 2 cp configure.scan configure.ac
+step 3 modify configure.ac
+step 4 aclocal
+step 5 take Makfile.am
+step 6 autoheader
+step 7 touch NEWS README AUTHORS ChangeLog
+step 8 automake -a
+step 9 autoconf
+step 10 ./configure
+step 11 make
+

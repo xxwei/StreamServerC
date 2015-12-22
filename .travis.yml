@@ -2,4 +2,7 @@ language: cpp
 compiler:
 - g++
 
+before_install:
+- sudo apt-get install automake -y
+ 
 script: ./configure && make 

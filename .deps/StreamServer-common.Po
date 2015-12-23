@@ -1,1 +1,6 @@
-# dummy
+StreamServer-common.o: src/common.cpp /usr/include/stdc-predef.h \
+ include/common.hpp
+
+/usr/include/stdc-predef.h:
+
+include/common.hpp:

@@ -4,6 +4,7 @@ compiler:
 
 before_install:
 - sudo apt-get install automake -y
+- sudo apt-get install autoconf -y
  
 script: 
 - autoreconf -vfi

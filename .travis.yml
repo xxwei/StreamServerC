@@ -7,5 +7,7 @@ before_install:
 - sudo apt-get install autoconf -y
  
 script: 
-- autoreconf -vfi
+- aclocal
+- autoconf -v 
+- autoconf
 - ./configure && make 

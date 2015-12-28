@@ -7,10 +7,10 @@ before_install:
 - sudo apt-get install autoconf -y
 - sudo mkdir depends
 - cd depends
-- wget http://download.savannah.gnu.org/releases/osip/libosip2-4.0.0.tar.gz
-- wget http://download.savannah.gnu.org/releases/exosip/libeXosip2-4.1.0.tar.gz
-- tar -zxvf libosip2-4.0.0.tar.gz
-- tar -zxvf libeXosip2-4.1.0.tar.gz
+- sudo wget http://download.savannah.gnu.org/releases/osip/libosip2-4.0.0.tar.gz
+- sudo wget http://download.savannah.gnu.org/releases/exosip/libeXosip2-4.1.0.tar.gz
+- sudo tar -zxvf libosip2-4.0.0.tar.gz
+- sudo tar -zxvf libeXosip2-4.1.0.tar.gz
 - cd libosip2-4.0.0
 - ./configure
 - make

@@ -12,14 +12,14 @@ before_install:
 - sudo tar -zxvf libosip2-4.0.0.tar.gz
 - sudo tar -zxvf libeXosip2-4.1.0.tar.gz
 - cd libosip2-4.0.0
-- ./configure
-- make
-- make install
+- sudo ./configure
+- sudo make
+- sudo make install
 - cd ..
 - cd libeXosip2-4.1.0
-- ./configure
-- make
-- make install
+- sudo ./configure
+- sudo make
+- sudo make install
 - cd ..
 - cd ..
 

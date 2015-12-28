@@ -5,6 +5,7 @@ compiler:
 before_install:
 - sudo apt-get install automake -y
 - sudo apt-get install autoconf -y
+- sudo apt-get install -y libxml2-dev
 - sudo mkdir depends
 - cd depends
 - sudo wget http://download.savannah.gnu.org/releases/osip/libosip2-4.0.0.tar.gz
@@ -25,6 +26,7 @@ before_install:
 
  
 script: 
+- ldconfig
 - automake --version
 - autoconf -V 
 - aclocal

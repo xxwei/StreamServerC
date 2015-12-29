@@ -6,10 +6,16 @@ before_install:
 
 - sudo apt-get install automake -y
 - sudo apt-get install autoconf -y
-- sudo apt-get install cpputest -y
 - sudo apt-get install -y libxml2-dev
 - sudo mkdir depends
 - cd depends
+- sudo wget https://github.com/cpputest/cpputest.github.io/blob/master/releases/cpputest-3.7.1.tar.gz?raw=true
+- sudo mv cpputest* cpputest-3.7.1
+- cd cpputest-3.7.1
+- sudo ./configure
+- sudo make
+- sudo make install
+- cd ..
 - sudo wget https://github.com/google/glog/archive/v0.3.4.tar.gz
 - sudo tar -zxvf v0.3.4.tar.gz
 - cd glog-0.3.4

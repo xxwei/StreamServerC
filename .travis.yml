@@ -3,14 +3,20 @@ compiler:
 - g++
 
 before_install:
+
 - sudo apt-get install automake -y
 - sudo apt-get install autoconf -y
+- sudo apt-get install cpputest -y
 - sudo apt-get install -y libxml2-dev
 - sudo mkdir depends
 - cd depends
 - sudo wget https://github.com/google/glog/archive/v0.3.4.tar.gz
-- tar -zxvf v0.3.4.tar.gz
-- 
+- sudo tar -zxvf v0.3.4.tar.gz
+- cd glog-0.3.4
+- sudo ./configure
+- sudo make
+- sudo make install
+- cd ..
 - sudo wget http://download.savannah.gnu.org/releases/osip/libosip2-4.0.0.tar.gz
 - sudo wget http://download.savannah.gnu.org/releases/exosip/libeXosip2-4.1.0.tar.gz
 - sudo tar -zxvf libosip2-4.0.0.tar.gz
